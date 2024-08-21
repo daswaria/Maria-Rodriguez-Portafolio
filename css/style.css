@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&display=swap');
+
+/*! -------- RESET --------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+/*! -------- HEADER --------*/
+
+header{
+    background-color:#ffffff;
+    margin: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+header h1 a{
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* -------- NAV --------*/
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0px 10px;
+}
+
+header nav ul li a{
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: #000000;
+}
+
+/*! -------- MAIN --------*/
+
+/*? -------- INDEX --------*/
+
+/* -------- HERO --------*/
+
+.hero{
+    width:100%;
+    height: calc(100vh - 123px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2{
+    font-size: 150px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.hero p{
+    font-size: 35px;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.rrss a{
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: #616161;
+    margin: 0px 40px;
+}
+
+
+/* -------- BIO --------*/
+
+.bio div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-content-uno{
+    font-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    text-align: left;
+    width: 80%;
+}
+
+.bio-content-dos{
+    font-size: 60px;
+    font-weight:400;
+    font-style: normal;
+    color: #000000;
+    text-align: left;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.bio a{
+    font-size: 20px;
+    font-weight: 600;
+    font-style:normal;
+    background-color: #9F9F9F;
+    text-decoration: none;
+    color: #000000;
+    padding: 20px 40px 20px 40px;
+    border-radius: 50px;
+    margin-top: 70px;
+}
+
+/* -------- PROYECTOS --------*/
+
+.proyectos{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectos h2{
+    font-size: 128px;
+    font-weight: 800;
+    font-style: normal;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.proyectos p{
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    width: 40%;
+    color: #000000;
+}
+
+/* -------- .proyectos div{display: inline-block;} -------- */
+
+/* --------  .carrusel-track{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carrusel{
+    width: 100%;
+    margin: 0px 0px;
+}
+-------- */
+
+.carrusel  div a{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #9F9F9F;
+    text-decoration: none;
+    color:#000000;
+    padding: 20px 20px 20px 20px;
+    border-radius: 50px;
+}
+
+/* -------- CONTACTO --------*/
+
+.contacto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto p{
+    font-size: 55px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.contacto h2{
+    font-size: 130px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.btn-arriba a img{
+    width: 70px;
+}
+
+.btn-arriba a img{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/*? -------- PROYECTOS --------*/
+
+/*! -------- MAIN --------*/
+
+/* -------- HERO --------*/
+
+.hero-proyectos{
+    width: 100%;
+    height: calc(100vh - 123px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-proyectos h2{
+    font-size:120px;
+    font-weight:700;
+    font-style: normal;
+    text-align: left;
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.clasificaciones a{
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: #616161;
+    margin: 0px 40px;
+}
+
+/* -------- GRID GALERIA DE PROYECTOS --------*/
+
+.grid-galeria{
+    margin: 40px;
+    width: 95%;
+    height:95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+}
+
+.grid-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item{
+    position: relative;
+}
+
+.grid-item h3 a{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #9F9F9F;
+    text-decoration: none;
+    color:#000000;
+    padding: 20px 20px 20px 20px;
+    border-radius: 50px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+/*? -------- PROYECTOUNO --------*/
+
+/*! -------- MAIN --------*/
+
+/* -------- HERO --------*/
+
+.hero-proyecto-uno{
+    width: 100%;
+    height: calc(100vh - 123px);
+}
+
+.hero-proyecto-uno h2{
+    font-size: 100px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+}
+
+.hero-proyecto-uno p{
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    width: 50%;
+}
+
+.descripcion-uno{
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+}
+
+.descripcion-dos{
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+}
+
+/*? -------- BIO --------*/
+
+/*! -------- MAIN --------*/
+
+/* -------- HERO --------*/
+
+.hero-bio{
+    width: 100%;
+    height: calc(100vh - 123px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-bio h2{
+    font-size: 70px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+    width: 80%;
+}
+
+
+/*? -------- CONTACTO --------*/
+
+/*! -------- MAIN --------*/
+
+/* -------- HERO --------*/
+
+
+/*! -------- FOOTER --------*/
+
+footer{
+    margin: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div a img{
+    width: 66px;
+    height: 36px;
+    color: #000000;
+}
+
+footer p{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
