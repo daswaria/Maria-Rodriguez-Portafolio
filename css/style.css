@@ -335,8 +335,7 @@ header nav ul li a{
         grid-column: 1;
     }
     .grid-item img{
-        width: auto;
-        height: auto;
+
         border-radius: 25px;
     }
     .contacto{
