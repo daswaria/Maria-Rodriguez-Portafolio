@@ -161,12 +161,14 @@ header nav ul li a{
 
 .grid-galeria{
     margin: 40px;
-    width: 95%;
-    height:95%;
+    width: 85%;
+    height:85%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    gap: 25px;
+    gap: 55px;
+    max-width: 1920px;
+    margin: 150px auto;
 }
 
 .grid-item img{
@@ -199,9 +201,12 @@ header nav ul li a{
     0% {
         transform: translateX(0);
 }
-    100% {
-        transform: translateX(calc(-250px * 7));
+    50% {
+        transform: translateX(calc(-250px * 4));
 }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .slider {
@@ -210,6 +215,7 @@ header nav ul li a{
     overflow: hidden;
     position: relative;
     top: 200px;
+    padding: 25px 0;
 }
 
 .slide img{
@@ -236,6 +242,8 @@ header nav ul li a{
     animation: scroll 30s linear infinite;
     display: flex;
     width: calc(150px * 14);
+    position: absolute;
+    top: 25px;
 }
 .slider .slide {
     height: 100px;
@@ -257,6 +265,7 @@ header nav ul li a{
     font-style: normal;
     text-align: center;
     color: #000000;
+    margin-top: 180px;
 }
 
 .contacto h2{
@@ -277,81 +286,104 @@ header nav ul li a{
     right: 50px;
 }
 
-@media screen and (max-width: 1434px){
-    .hero h2{
-        font-size: 130px;
-        font-weight: 800;
-        font-style: normal;
-        text-align: center;
-        width: 85%;
-        text-transform: uppercase;
-    }
+@media screen and (max-width:1110px) {
+    .contacto p{
+        font-size: 45px;
 }
 
-@media screen and (max-width:595px){
+.contacto h2{
+    font-size: 110px;
+}
+
+}
+
+@media screen and (max-width: 595px){
     header {
         flex-direction: column;
     }
+
     .header ul{
         margin-top: 10px;
     }
+
     .hero {
         height: 85vh;
     }
+
     .hero h2{
         font-size: 100px;
     }
+
     .hero p{
         font-size: 25px;
     }
+
     .rrss img{
     display: none;
     }
+
     .bio div{
         height: 110vh;
     }
+
     .bio-content-uno{
         font-size: 30px;
         width: 85%;
         margin-left: 50px;
     }
+
     .bio-content-dos{
         font-size: 30px;
         width: 85%;
         margin-left: 50px;
         margin-top: 60px;
     }
+
     .proyectos h2{
         font-size: 70px;
     }
+
     .proyectos p{
         font-size: 25px;
         width: 100%;
     }
+
     .grid-galeria{
         grid-template-columns: 1fr;
     }
+
     .grid-item{
         grid-column: 1;
     }
-    .grid-item img{
 
+    .grid-item img{
         border-radius: 25px;
     }
+
     .contacto{
         height: 80vh;
     }
+
     .contacto p{
         font-size: 30px;
         margin-top:200px
     }
+
     .contacto h2{
         font-size: 60px;
         margin-top: 5px;
     }
 
-}
+    .btn-arriba a img{
+        width: 55px;
+    }
 
+    .btn-arriba a img{
+        position: fixed;
+        bottom: 50px;
+        right: 30px;
+    }
+}
 
 /*? -------- PROYECTOS --------*/
 
@@ -388,14 +420,15 @@ header nav ul li a{
 
 /* -------- GRID GALERIA DE PROYECTOS --------*/
 
-.grid-galeria{
-    margin: 40px;
-    width: 95%;
-    height:95%;
+.grid-galeria-proyectos{
+    width: 85%;
+    height:85%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    gap: 25px;
+    gap: 55px;
+    max-width: 1920px;
+    margin: 200px auto;
 }
 
 .grid-item img{
@@ -420,6 +453,55 @@ header nav ul li a{
     left: 30px;
     bottom: 30px;
 }
+
+@media screen and (max-width:1284px){
+    .hero-proyectos h2{
+        font-size: 110px;
+    }
+
+    .clasificaciones img{
+        margin-top: 20px;
+    }
+
+    .grid-galeria-proyectos{
+        margin: 90px auto;
+    }
+}
+
+@media screen and (max-width:1096px){
+    .hero-proyectos h2{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:973px) {
+    .hero-proyectos h2{
+        font-size: 90px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:595px){
+    .hero-proyectos h2{
+        font-size: 80px;
+    }
+    
+    .clasificaciones img{
+            display: none;
+    }
+    
+    .grid-galeria-proyectos{
+        width: 85%;
+        height:85%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 35px;
+        max-width: 1920px;
+        margin: 100px auto;
+    }
+
+    }
 
 /*? -------- PROYECTOUNO --------*/
 
@@ -477,6 +559,10 @@ header nav ul li a{
     align-items: center;
 }
 
+.hero-bio img{
+    margin: 20px;
+}
+
 .hero-bio h2{
     font-size: 70px;
     font-weight: 200;
@@ -485,6 +571,142 @@ header nav ul li a{
     text-align: center;
     color: #000000;
     width: 80%;
+}
+
+.grid-cv {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 70px;
+    margin: 150px 40px 0px 40px;
+    
+}
+
+.formacion{
+    background-color: #D5D5D5;
+    padding: 50px 40px;
+    border-radius: 30px;
+}
+.formacion-uno h2{
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: 30px;
+    margin-top: 6px;
+}
+
+.formacion-uno p{
+    font-size: 25px;
+    font-weight: 200;
+    font-style: normal;
+    color: #000000;
+    margin-left: 30px;
+}
+
+.formacion-dos p{
+    font-size: 25px;
+    font-weight: 200;
+    font-style: normal;
+    color: #000000;
+    margin-left: 30px;
+}
+
+.temporalidad{
+    margin-top: 45px;
+}
+
+.experiencia{
+    background-color: #D5D5D5;
+    padding: 30px 40px;
+    border-radius: 30px;
+}
+
+.experiencia{
+    grid-row: span 2;
+}
+
+.experiencia-trainee h3{
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.experiencia-trainee p{
+    font-size: 25px;
+    font-weight: 200;
+    font-style: normal;
+    color: #000000;
+    margin-left: 30px;
+    width: 88%;
+}
+
+.experiencia-toilettes p{
+    font-size: 25px;
+    font-weight: 200;
+    font-style: normal;
+    color: #000000;
+    margin-left: 30px;
+    width: 88%;
+}
+
+.experiencia-sub p{
+    font-size: 25px;
+    font-weight: 200;
+    font-style: normal;
+    color: #000000;
+    margin-left: 30px;
+    width: 88%;
+}
+
+.puesto{
+    margin-top: 45px;
+}
+
+.habilidades{
+    background-color: #D5D5D5;
+    padding: 50px 40px;
+    border-radius: 30px;
+}
+
+.habilidades h4{
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: 30px;
+    margin-top: 6px;
+}
+
+.habilidades ul il{
+    font-size: 25px;
+    font-weight: 200;
+    font-style: normal;
+    color: #000000;
+}
+
+.habilidades ul il p{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+/* -------- GRID GALERIA DE PROYECTOS --------*/
+
+.grid-galeria-bio{
+    width: 90%;
+    height:90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 55px;
+    margin: 400px auto;
 }
 
 
