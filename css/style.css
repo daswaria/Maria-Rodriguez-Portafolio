@@ -29,14 +29,20 @@ header h1 a{
 }
 
 /* -------- NAV --------*/
+header nav{
+    width: 70%;
+}
 
 header nav ul{
     list-style: none;
     display: flex;
+    width: 100%;
 }
 
 header nav ul li{
     margin: 0px 10px;
+    flex: 1 1 0px;
+    text-align: center;
 }
 
 header nav ul li a{
@@ -63,7 +69,7 @@ header nav ul li a{
 }
 
 .hero h2{
-    font-size: 150px;
+    font-size: 130px;
     font-weight: 800;
     font-style: normal;
     text-align: center;
@@ -99,7 +105,7 @@ header nav ul li a{
 }
 
 .bio-content-uno{
-    font-size: 50px;
+    font-size: 47px;
     font-weight: 300;
     font-style: normal;
     color: #000000;
@@ -108,7 +114,7 @@ header nav ul li a{
 }
 
 .bio-content-dos{
-    font-size: 50px;
+    font-size: 47px;
     font-weight: 300;
     font-style: normal;
     color: #000000;
@@ -148,12 +154,12 @@ header nav ul li a{
 }
 
 .proyectos p{
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 300;
     font-style: normal;
     text-transform: uppercase;
     text-align: center;
-    width: 40%;
+    width: 80%;
     color: #000000;
 }
 
@@ -214,7 +220,7 @@ header nav ul li a{
     height: 150px;
     overflow: hidden;
     position: relative;
-    top: 200px;
+    top: 100px;
     padding: 25px 0;
 }
 
@@ -252,23 +258,23 @@ header nav ul li a{
 
 /* -------- CONTACTO --------*/
 
-.contacto{
-    height: 100vh;
+.contacto-home{
+    margin-top: 400px;
+    margin-bottom: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.contacto p{
+.contacto-home p{
     font-size: 55px;
     font-weight: 300;
     font-style: normal;
     text-align: center;
     color: #000000;
-    margin-top: 180px;
 }
 
-.contacto h2{
+.contacto-home h2{
     font-size: 130px;
     font-weight: 200;
     font-style: normal;
@@ -401,7 +407,25 @@ header nav ul li a{
 }
 
 .hero-proyectos h2{
-    font-size:120px;
+    font-size:145px;
+    font-weight:200;
+    font-style: normal;
+    text-align: left;
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.hero-proyectos h3{
+    font-size:145px;
+    font-weight:200;
+    font-style: normal;
+    text-align: left;
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.hero-proyectos h4{
+    font-size:145px;
     font-weight:700;
     font-style: normal;
     text-align: left;
@@ -454,7 +478,35 @@ header nav ul li a{
     bottom: 30px;
 }
 
+.contacto{
+    margin-top: 350px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto p{
+    font-size: 55px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.contacto h2{
+    font-size: 130px;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
 @media screen and (max-width:1284px){
+    .hero-proyecto-uno{
+        grid-template-columns: 1fr !important;
+    }
+    
     .hero-proyectos h2{
         font-size: 110px;
     }
@@ -512,6 +564,10 @@ header nav ul li a{
 .hero-proyecto-uno{
     width: 100%;
     height: calc(100vh - 123px);
+    margin: 0px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
 }
 
 .hero-proyecto-uno h2{
@@ -526,21 +582,115 @@ header nav ul li a{
     font-weight: 300;
     font-style: normal;
     text-align: left;
-    width: 50%;
+    margin-top: 15px;
 }
 
-.descripcion-uno{
+.hero-proyecto-uno img{
+    margin-bottom: 20px;
+}
+
+.descripcion img{
+    margin-top: 150px;
+    width: 100%;
+}
+
+.proyecto-info{
     font-size: 30px;
     font-weight: 300;
     font-style: normal;
     text-align: left;
+    margin-top: 150px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.descripcion-dos{
-    font-size: 30px;
+.flecha-top{
+    margin-top: 50px;
+}
+
+.cliente{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.marca{
+    margin-left: 200px;
+}
+
+.fecha{
+    font-size: 20px;
     font-weight: 300;
     font-style: normal;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.año{
+    margin-left: 230px;
+}
+
+.herramientas{
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.programas{
+    margin-left: 140px;
+}
+
+.grid-galeria-proyecto-uno{
+    width: 85%;
+    height:85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 45px;
+    max-width: 1920px;
+    margin: 300px auto;
+}
+
+.contacto-proyecto-uno{
+    margin-top: 400px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-proyecto-uno p{
+    font-size: 55px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.contacto-proyecto-uno h2{
+    font-size: 130px;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
 }
 
 
@@ -564,7 +714,7 @@ header nav ul li a{
 }
 
 .hero-bio h2{
-    font-size: 70px;
+    font-size: 62px;
     font-weight: 200;
     font-style: normal;
     text-transform: uppercase;
@@ -697,6 +847,29 @@ header nav ul li a{
     margin-top: 20px;
 }
 
+.contacto-bio{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-bio p{
+    font-size: 55px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.contacto-bio h2{
+    font-size: 130px;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
 /* -------- GRID GALERIA DE PROYECTOS --------*/
 
 .grid-galeria-bio{
@@ -707,6 +880,30 @@ header nav ul li a{
     grid-template-rows: auto;
     gap: 55px;
     margin: 400px auto;
+}
+
+
+.contacto-proyecto-uno{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-proyecto-uno p{
+    font-size: 55px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+}
+
+.contacto-proyecto-uno h2{
+    font-size: 130px;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
 }
 
 
