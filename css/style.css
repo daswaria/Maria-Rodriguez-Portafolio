@@ -1308,12 +1308,29 @@ header nav ul li a{
 }
 
 .hero-contacto h2{
-    font-size: 100px;
-    font-weight: 200;
+    font-size: 130px;
+    font-weight: 800;
     font-style: normal;
     text-align: center;
     width: 85%;
     text-transform: uppercase;
+}
+
+.hero-contacto p{
+    font-size: 100px;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.intro-formulario h2 {
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
 
 .formulario{
