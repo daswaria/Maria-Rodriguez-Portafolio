@@ -4,10 +4,18 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif; }
 
 body {
-  font-family: "Inter", sans-serif; }
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  overflow-x: hidden; }
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1920px; }
 
 header {
   background-color: #ffffff;
@@ -47,14 +55,14 @@ header {
   justify-content: center;
   align-items: center; }
   .hero h2 {
-    font-size: 130px;
+    font-size: 155px;
     font-weight: 800;
     font-style: normal;
     text-align: center;
     width: 85%;
     text-transform: uppercase; }
   .hero p {
-    font-size: 35px;
+    font-size: 50px;
     font-weight: 300;
     font-style: normal;
     text-transform: uppercase; }
@@ -193,20 +201,20 @@ header {
       height: 100px;
       width: 630px; }
 
-.contacto-home {
+.contacto-mail {
   margin-top: 400px;
-  margin-bottom: 200px;
+  margin-bottom: 218px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .contacto-home p {
+  .contacto-mail p {
     font-size: 55px;
     font-weight: 300;
     font-style: normal;
     text-align: center;
     color: #000000; }
-  .contacto-home h2 {
+  .contacto-mail h2 {
     font-size: 130px;
     font-weight: 200;
     font-style: normal;
@@ -277,26 +285,6 @@ header {
       left: 30px;
       bottom: 30px; }
 
-.contacto {
-  margin-top: 350px;
-  margin-bottom: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .contacto p {
-    font-size: 55px;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    color: #000000; }
-  .contacto h2 {
-    font-size: 130px;
-    font-weight: 200;
-    font-style: normal;
-    text-align: center;
-    color: #000000; }
-
 /* PROYECTO_UNO */
 .hero-proyecto-uno {
   width: 100%;
@@ -306,10 +294,11 @@ header {
   grid-template-columns: 1fr 1fr;
   align-items: end; }
   .hero-proyecto-uno h2 {
-    font-size: 80px;
-    font-weight: 300;
+    font-size: 60px;
+    font-weight: 800;
     font-style: normal;
-    text-align: left; }
+    text-align: left;
+    text-transform: uppercase; }
   .hero-proyecto-uno p {
     font-size: 35px;
     font-weight: 300;
@@ -319,20 +308,23 @@ header {
   .hero-proyecto-uno img {
     margin-bottom: 20px; }
 
-.descripcion .img {
-  margin-top: 150px;
-  width: 100%; }
+.banner-principal {
+  margin-top: 150px; }
 
-.descripcion .proyecto-info {
-  font-size: 30px;
-  font-weight: 300;
-  font-style: normal;
-  text-align: left;
-  margin-top: 150px;
-  width: 40%;
+.descripcion-proyecto {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-items: end;
+  align-items: end;
+  margin-right: 100px; }
+  .descripcion-proyecto .proyecto-info {
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    margin-top: 150px;
+    margin-right: 100px;
+    width: 40%; }
 
 .flecha-top {
   margin-top: 50px; }
@@ -342,11 +334,7 @@ header {
   font-weight: 700;
   font-style: normal;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin: 20px 0px; }
   .cliente .marca {
     margin-left: 200px; }
 
@@ -355,11 +343,7 @@ header {
   font-weight: 300;
   font-style: normal;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin: 20px 0px; }
   .fecha .año {
     margin-left: 230px; }
 
@@ -368,47 +352,9 @@ header {
   font-weight: 300;
   font-style: normal;
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin: 20px 0px; }
   .herramientas .programas {
     margin-left: 140px; }
-
-.grid-galeria-proyecto-uno {
-  width: 85%;
-  height: 85%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  gap: 45px;
-  max-width: 1920px;
-  margin: 300px auto; }
-  .grid-galeria-proyecto-uno img {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px; }
-
-.contacto-proyecto-uno {
-  margin-top: 400px;
-  margin-bottom: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .contacto-proyecto-uno p {
-    font-size: 55px;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    color: #000000; }
-  .contacto-proyecto-uno h2 {
-    font-size: 130px;
-    font-weight: 200;
-    font-style: normal;
-    text-align: center;
-    color: #000000; }
 
 /* BIO */
 .hero-bio {
@@ -430,17 +376,17 @@ header {
     width: 80%; }
 
 .grid-cv {
-  width: 95%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 70px;
-  margin: 150px 40px 0px 40px; }
-  .grid-cv .formacion {
+  margin-top: 150px;
+  margin-bottom: 200px; }
+  .grid-cv .formacion-card {
     background-color: #D5D5D5;
     padding: 50px 40px;
     border-radius: 30px; }
-    .grid-cv .formacion .formacion-uno h2 {
+    .grid-cv .formacion-card .formacion-uno h2 {
       font-size: 30px;
       font-weight: 800;
       font-style: normal;
@@ -448,26 +394,26 @@ header {
       color: #000000;
       margin-left: 30px;
       margin-top: 6px; }
-    .grid-cv .formacion .formacion-uno p {
+    .grid-cv .formacion-card .formacion-uno p {
       font-size: 25px;
       font-weight: 200;
       font-style: normal;
       color: #000000;
       margin-left: 30px; }
-    .grid-cv .formacion .formacion-dos p {
+    .grid-cv .formacion-card .formacion-dos p {
       font-size: 25px;
       font-weight: 200;
       font-style: normal;
       color: #000000;
       margin-left: 30px; }
-    .grid-cv .formacion .temporalidad {
+    .grid-cv .formacion-card .temporalidad {
       margin-top: 45px; }
-  .grid-cv .experiencia {
+  .grid-cv .experiencia-card {
     background-color: #D5D5D5;
     padding: 30px 40px;
     border-radius: 30px;
     grid-row: span 2; }
-    .grid-cv .experiencia .experiencia-trainee h3 {
+    .grid-cv .experiencia-card .experiencia-trainee h3 {
       font-size: 30px;
       font-weight: 800;
       font-style: normal;
@@ -475,21 +421,21 @@ header {
       color: #000000;
       margin-left: 30px;
       margin-top: 25px; }
-    .grid-cv .experiencia .experiencia-trainee p {
+    .grid-cv .experiencia-card .experiencia-trainee p {
       font-size: 25px;
       font-weight: 200;
       font-style: normal;
       color: #000000;
       margin-left: 30px;
       width: 88%; }
-    .grid-cv .experiencia .experiencia-toilettes p {
+    .grid-cv .experiencia-card .experiencia-toilettes p {
       font-size: 25px;
       font-weight: 200;
       font-style: normal;
       color: #000000;
       margin-left: 30px;
       width: 88%; }
-    .grid-cv .experiencia .experiencia-sub p {
+    .grid-cv .experiencia-card .experiencia-sub p {
       font-size: 25px;
       font-weight: 200;
       font-style: normal;
@@ -516,9 +462,8 @@ header {
       .grid-cv .habilidades ul il p {
         margin-left: 30px;
         margin-top: 20px; }
-
-.puesto {
-  margin-top: 45px; }
+  .grid-cv .puesto {
+    margin-top: 45px; }
 
 .slider-bio {
   background: #D9D9D9;
@@ -560,7 +505,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 55px;
-  margin: 400px auto; }
+  margin: 400px 200px; }
   .grid-galeria-bio .grid-item {
     position: relative; }
     .grid-galeria-bio .grid-item img {
@@ -578,26 +523,6 @@ header {
       left: 30px;
       bottom: 30px; }
 
-.contacto-bio {
-  margin-top: 200px;
-  margin-bottom: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .contacto-bio p {
-    font-size: 55px;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    color: #000000; }
-  .contacto-bio h2 {
-    font-size: 130px;
-    font-weight: 200;
-    font-style: normal;
-    text-align: center;
-    color: #000000; }
-
 /* CONTACTO */
 .hero-contacto {
   width: 100%;
@@ -607,12 +532,27 @@ header {
   justify-content: center;
   align-items: center; }
   .hero-contacto h2 {
-    font-size: 100px;
-    font-weight: 200;
+    font-size: 130px;
+    font-weight: 800;
     font-style: normal;
     text-align: center;
     width: 85%;
     text-transform: uppercase; }
+  .hero-contacto p {
+    font-size: 100px;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase; }
+
+.intro-formulario h2 {
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 200px;
+  width: 85%;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
 
 footer {
   margin: 10px 40px;
@@ -628,3 +568,190 @@ footer {
     font-weight: 400;
     font-style: normal;
     color: #000000; }
+
+@media screen and (max-width: 1920px) {
+  /*DESKTOP*/
+  /*header*/
+  header nav {
+    width: 70%; }
+  /*index*/
+  .hero h2 {
+    font-size: 10rem; }
+  .hero p {
+    font-size: 3rem;
+    text-align: center; }
+  .bio div {
+    min-height: 100vh;
+    height: auto; }
+    .bio div .bio-content-uno {
+      font-size: 3rem; }
+    .bio div .bio-content-dos {
+      font-size: 3rem; }
+  .img-container img {
+    width: 100%; }
+  .proyectos {
+    padding: 100px 0; }
+    .proyectos h2 {
+      font-size: 8rem; }
+    .proyectos p {
+      font-size: 1.7rem; }
+  .grid-galeria {
+    height: auto;
+    margin: 150px auto; }
+  /*bio*/
+  .hero-bio h2 {
+    font-size: 60px; }
+  .grid-cv {
+    margin-top: 300px;
+    margin-bottom: 300px; }
+    .grid-cv .formacion .card h2 {
+      margin-left: 0;
+      margin-top: 0; }
+    .grid-cv .formacion .card p {
+      margin-left: 0; }
+  .slider-bio {
+    margin: 100px 0;
+    top: 0; }
+  .grid-galeria-bio {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    height: auto;
+    margin: 250px auto; }
+    .grid-galeria-bio .grid-item {
+      width: 100%; }
+      .grid-galeria-bio .grid-item img {
+        width: 100%; }
+  /*PROYECTOS*/
+  .hero-proyectos {
+    width: 90%; }
+    .hero-proyectos h2 {
+      font-size: 10rem; }
+  /*PROYECTO TEMPLATE*/
+  .descripcion-proyecto {
+    margin: 150px 0; }
+    .descripcion-proyecto .proyecto-info {
+      margin: 0;
+      width: 516px; }
+  /*contacto*/
+  .intro-formulario h2 {
+    font-size: 50px; }
+  .formulario form {
+    max-width: 660px;
+    margin: 50px auto; }
+    .formulario form textarea {
+      resize: none; }
+  /*footer*/
+  .contacto-mail h2 {
+    font-size: 8rem; } }
+
+@media screen and (max-width: 768px) {
+  /*TABLET*/
+  /*header*/
+  header {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column; }
+    header nav {
+      width: 100%; }
+      header nav ul li {
+        text-align: center; }
+  /*index*/
+  .hero h2 {
+    font-size: 8rem; }
+  .hero p {
+    font-size: 1.5rem; }
+  .rrss img {
+    display: none; }
+  .bio div .bio-content-uno {
+    font-size: 2rem; }
+  .bio div .bio-content-dos {
+    font-size: 2rem; }
+  .proyectos h2 {
+    font-size: 6rem; }
+  .proyectos p {
+    font-size: 1.3rem; }
+  .grid-galeria {
+    grid-template-columns: 1fr;
+    margin: 50px auto; }
+  /*bio*/
+  .hero-bio h2 {
+    font-size: 30px; }
+  .grid-cv {
+    grid-template-columns: 1fr; }
+    .grid-cv .formacion .formacion-uno h2 {
+      margin-left: 0;
+      margin-top: 0; }
+  .grid-galeria-bio {
+    grid-template-columns: 1fr; }
+  /*PROYECTOS*/
+  .hero-proyectos h2 {
+    font-size: 4.5rem; }
+  /*PROYECTO TEMPLATE*/
+  .hero-proyecto-uno {
+    grid-template-columns: 1fr 1fr; }
+    .hero-proyecto-uno h2 {
+      font-size: 3rem; }
+    .hero-proyecto-uno p {
+      font-size: 2rem; }
+    .hero-proyecto-uno img {
+      display: none; }
+  .descripcion-proyecto .proyecto info {
+    margin: 0 auto;
+    width: 90%; }
+  /*contacto*/
+  .intro-formulario h2 {
+    font-size: 30px; }
+  .formulario form {
+    max-width: 460px; }
+  /*footer*/
+  .contacto-mail h2 {
+    font-size: 4.5rem; }
+  .contacto-mail p {
+    font-size: 2.75rem; } }
+
+@media screen and (max-width: 360px) {
+  /*MOBILE*/
+  /*index*/
+  .hero {
+    height: calc(100vh - 225px); }
+    .hero h2 {
+      font-size: 4rem; }
+    .hero p {
+      font-size: 1.5rem;
+      margin-left: 13px; }
+  .rrss a {
+    font-size: 18px;
+    margin: 0px 0px 0px 20px; }
+  .bio div {
+    min-height: auto;
+    padding: 50px 0; }
+    .bio div .bio-content-uno {
+      font-size: 1.5rem; }
+    .bio div .bio-content-dos {
+      font-size: 1.5rem; }
+  .proyectos h2 {
+    font-size: 3rem; }
+  .proyectos p {
+    font-size: 1.10rem; }
+  .grid-galeria {
+    margin-top: 60px;
+    margin-bottom: 80px; }
+  /*bio*/
+  .hero-bio h2 {
+    font-size: 24px; }
+  /*PROYECTOS*/
+  .hero-proyectos h2 {
+    font-size: 3rem; }
+  /*contacto*/
+  .intro-formulario h2 {
+    font-size: 20px; }
+  .formulario form {
+    max-width: 320px;
+    margin: 0 auto; }
+  /*footer*/
+  .contacto-mail h2 {
+    font-size: 2rem; }
+  .contacto-mail p {
+    font-size: 1.25rem; }
+  footer {
+    flex-direction: column; } }
